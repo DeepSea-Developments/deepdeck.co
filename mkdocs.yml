@@ -58,7 +58,7 @@ theme:
 site_url: https://deepdeck.co
 repo_url: https://github.com/DeepSea-Developments/deepdeck.co
 repo_name: deepdeck.co
-edit_uri: edit/main/docs/
+edit_uri: edit/mkdocs/docs/
 
 extra_css:
   - stylesheets/extra.css
