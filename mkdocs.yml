@@ -149,7 +149,10 @@ plugins:
   - search
   - blog
   - tags
-  - git-authors
+  # - git-authors
+  - git-committers:
+      repository: DeepSea-Developments/deepdeck.co
+      branch: mkdocs
   - git-revision-date-localized:
       enable_creation_date: true
   - meta
