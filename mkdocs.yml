@@ -7,25 +7,40 @@ theme:
   # Default values, taken from mkdocs_theme.yml
   language: en
   features:
+    - navigation.instant
+    - navigation.instant.prefetch
     - navigation.tabs
-    - content.code.annotate
-    # - content.tabs.link
-    - content.tooltips
-    # - header.autohide
-    # - navigation.expand
-    - navigation.indexes
-    # - navigation.instant
-    # - navigation.prune
-    - navigation.sections
-    
-    # - navigation.tabs.sticky
-    - navigation.top
     - navigation.tracking
+    - navigation.expand
+    - navigation.path
+    - toc.follow
+    - search.suggest
     - search.highlight
     - search.share
-    - search.suggest
-    - toc.follow
-    # - toc.integrate
+    - navigation.footer
+    - navigation.indexes
+    - navigation.top
+    - content.action.edit
+    - content.action.view
+    # - navigation.tabs
+    # - content.code.annotate
+    # # - content.tabs.link
+    # - content.tooltips
+    # # - header.autohide
+    # # - navigation.expand
+    # - navigation.indexes
+    # # - navigation.instant
+    # # - navigation.prune
+    # - navigation.sections
+    
+    # # - navigation.tabs.sticky
+    # - navigation.top
+    # - navigation.tracking
+    # - search.highlight
+    # - search.share
+    # - search.suggest
+    # - toc.follow
+    # # - toc.integrate
 
   palette: 
     # Palette toggle for light mode
@@ -41,9 +56,9 @@ theme:
         name: Switch to light mode
 
 site_url: https://deepdeck.co
-repo_url: https://github.com/DeepSea-Developments/DeepDeck.Ahuyama.fw
-repo_name: DeepDeck
-edit_uri: edit/master/docs/
+repo_url: https://github.com/DeepSea-Developments/deepdeck.co
+repo_name: deepdeck.co
+edit_uri: edit/main/docs/
 
 extra_css:
   - stylesheets/extra.css
@@ -82,47 +97,63 @@ extra:
             using our <a href="..." target=_blank>feedback form</a>.
 
 markdown_extensions:
-
-  # Python Markdown
-  - abbr
   - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - meta
-  - md_in_html
-  - toc:
-      permalink: true
-
-  # Python Markdown Extensions
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
   - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
 
-# plugins:
-#   - social
+  # # Python Markdown
+  # - abbr
+  # - admonition
+  # - attr_list
+  # - def_list
+  # - footnotes
+  # - meta
+  # - md_in_html
+  # - toc:
+  #     permalink: true
+
+  # # Python Markdown Extensions
+  # - pymdownx.arithmatex:
+  #     generic: true
+  # - pymdownx.betterem:
+  #     smart_enable: all
+  # - pymdownx.caret
+  # - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight
+  # - pymdownx.inlinehilite
+  # - pymdownx.highlight:
+  #     anchor_linenums: true
+  # - pymdownx.inlinehilite
+  # - pymdownx.snippets
+  # - pymdownx.superfences
+  # - pymdownx.keys
+  # - pymdownx.mark
+  # - pymdownx.smartsymbols
+  # - pymdownx.superfences
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
+  # - pymdownx.tilde
+
+plugins:
+  - social
+  - search
+  - blog
+  - tags
+  - git-authors
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - meta
+  - glightbox
 
   # Page tree
 nav:
