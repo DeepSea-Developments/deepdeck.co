@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # Quick Start Guide
 
 Congratulations! You now have DeepDeck! Now what?

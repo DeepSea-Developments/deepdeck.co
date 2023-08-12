@@ -1,7 +1,18 @@
+# Project information
 site_name: DeepDeck
+site_url: https://deepdeck.co
+site_author: DeepSea Developments
+site_description: >-
+  OpenSoruce macropad with Wifi and Bluetooth connection. Your regular 
+  macropad but with steroids.
+
+# Copyright
+copyright: Copyright &copy; 2022 - 2023 DeepDeck by DeepSea Developments
+
+
 theme:
   name: material
-  custom_dir: docs
+  custom_dir: overrides
   icon:
     repo: material/github
   # Default values, taken from mkdocs_theme.yml
@@ -44,7 +55,7 @@ theme:
 
   palette: 
     # Palette toggle for light mode
-    - scheme: default
+    - scheme: deepdeck
       toggle:
         icon: material/weather-sunny 
         name: Switch to dark mode
@@ -55,7 +66,7 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
 
-site_url: https://deepdeck.co
+
 repo_url: https://github.com/DeepSea-Developments/deepdeck.co
 repo_name: deepdeck.co
 edit_uri: edit/mkdocs/docs/
@@ -66,7 +77,7 @@ extra_css:
 extra:
   alternate:
     - name: English
-      link: / 
+      link: /
       lang: en
     - name: Español
       link: /es/ 
@@ -147,9 +158,12 @@ markdown_extensions:
 plugins:
   - social
   - search
-  - blog
+  - blog:
+      archive: true
+      archive_toc: false
+      categories: true
+      categories_toc: false
   - tags
-  # - git-authors
   - git-committers:
       repository: DeepSea-Developments/deepdeck.co
       branch: mkdocs
@@ -158,25 +172,27 @@ plugins:
   - meta
   - glightbox
 
+
+
   # Page tree
 nav:
   - Home: index.md
   - Quick Start Guide: 
-      - First steps: qsg.md
-      - Firmware update: qsg-firmware-update.md
-      - WebServer: qsg-webserver.md
-      - Thank you!: thankyou.md
-  - Documentation:
-    - Installation: vscode-setup.md
-    - DeepDeck installer: installer.md
+    - First steps: en/QuickStartGuide/qsg.md
+    - Firmware update: en/QuickStartGuide/qsg-firmware-update.md
+    - WebServer: en/QuickStartGuide/qsg-webserver.md
+    - Thank you!: en/QuickStartGuide/thankyou.md
+  - Setup:
+    - Installation: en/Setup/vscode-setup.md
+    - DeepDeck installer: en/Setup/installer.md
     - Configuration: 
-      - deepdeck-configuration.md
-      - Layer: layer-configuration.md
-      - Macro: macro-configuration.md
-      - Knob: knob-configuration.md
+      - en/Setup/deepdeck-configuration.md
+      - Layer: en/Setup/layer-configuration.md
+      - Macro: en/Setup/macro-configuration.md
+      - Knob: en/Setup/knob-configuration.md
   - Resources: 
-    - Source Code: source_code.md
-    - 3d print accesories: 3dprint.md
-    - Other accesories: accessories.md
-    - Support: support.md
+    - Source Code: en/Resources/source_code.md
+    - 3d print accesories: en/Resources/3dprint.md
+    - Other accesories: en/Resources/accessories.md
+    - Support: en/Resources/support.md
   - Blog: blog/index.md
