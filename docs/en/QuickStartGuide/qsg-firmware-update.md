@@ -6,21 +6,21 @@ We are constantly releasing new features into DeepDeck and the idea is to have t
   <img src="https://github.com/DeepSea-Developments/DeepDeck.programmer/assets/5274871/cfba1ec1-c998-4838-bd41-ba83cd801823?raw=true" alt="DeepDeck Installert" width="90%"/>
 </p>
 
-## TL;DR (short version)
+## Short Version (TL;DR)
 
-1. Download the [DeepDeck installer](https://github.com/DeepSea-Developments/DeepDeck.programmer/releases) for your specific OS.
+1. <a href="https://github.com/DeepSea-Developments/DeepDeck.programmer/releases" target="_blank"> Download the DeepDeck installer </a> for your specific OS.
 2. Connect your DeepDeck to the computer. 
 3. Open the *DeepDeck installer*.
-4. Connect DeepDeck to your computer.
-5. Press the "Look for updates" button.
-6. The latest release of firmware will be selected automagically.
-7. Press "Erase and Program".
-8. Admire the art made by Dall-e and me while the program makes its work.
+4. Connect DeepDeck to your computer usign the USB-C cable.
+5. Press the "Look for updates" button on the *DeepDeck installer*.
+6. The latest release of firmware will be selected ✨*automagically*✨.
+7. Press *"Erase and Program"*.
+8. Admire the art made by Dall-e while the program makes its work it can take a while.
 9. When a pop-up window appears saying that everything is ok, you are ready to go.
 
 ## Complete version
 
-The first step is to [download the latest release of the *DeepDeck installer*](https://github.com/DeepSea-Developments/DeepDeck.programmer/releases) software. Version 0.5 is the latest at the time of writing this document.
+The first step is to <a href="https://github.com/DeepSea-Developments/DeepDeck.programmer/releases" target="_blank"> download the latest release of the *DeepDeck installer* </a> software. 
 
 ### USB Drivers
 
