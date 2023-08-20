@@ -21,8 +21,10 @@ There are 2 known conditions for this to happen:
 
 If none of this works, please go to [this page](https://github.com/DeepSea-Developments/DeepDeck.programmer/issues) and create an issue with screenshots and any relevant information as OS, so we can take a look
 
-#### Bluetooth goes crazy after DeepDeck firmware update
-This is a known issue after doing a firmware update in some systems (detected so far in Ubuntu 22.04). To solve it, go to your Bluetooth config window, and remove DeepDeck (Ahuyama) from the paired devices. Restart your DeepDeck and connect your computer again. This should solve the issue.
+???+ bug "Bluetooth goes crazy after DeepDeck firmware update"
+
+    A known issue is that **after flashing the deepdeck** the bluetooth connection goes crazy and it connects and disconnects. This just happens on this situation, and to solve this you should unpair the deepdeck from the device, reboot the deepdeck, and boot again.
+    We will see how to solve this bug, but as the workaround is easy and **only happens after flashing** it has low priority on the development.
 
 ## Program components
 

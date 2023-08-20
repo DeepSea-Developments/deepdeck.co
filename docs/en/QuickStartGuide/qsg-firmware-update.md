@@ -42,13 +42,13 @@ Download [CP210x Universal Windows Driver](https://www.silabs.com/developers/usb
 
 To install the drivers:
 
-- Uncompress the drivers. 
-- Right click on the unknown device on the *Device Manager*, and select **"install/update driver"**. 
-- On the window that will pop up, select **Browse my computer for drivers**. 
-- In the next window, select **Let me pick from a list of available drivers on my computer**. 
-- In the next windows select **Have a disk** and browse the location where the drivers were uncompressed, and select **silabser.inf**. 
-- A list of drivers will refresh. Select **Silicon labs CP210x USB to UART bridge**. 
-- Click next to install the driver. Check again the device manager, and if t does not appear try restarting the PC.
+1. Uncompress the drivers. 
+1. Right click on the unknown device on the *Device Manager*, and select **"install/update driver"**. 
+1. On the window that will pop up, select **Browse my computer for drivers**. 
+1. In the next window, select **Let me pick from a list of available drivers on my computer**. 
+1. In the next windows select **Have a disk** and browse the location where the drivers were uncompressed, and select **silabser.inf**. 
+1. A list of drivers will refresh. Select **Silicon labs CP210x USB to UART bridge**. 
+1. Click next to install the driver. Check again the device manager, and if t does not appear try restarting the PC.
 
 ### Linux and Mac users:
 
@@ -77,9 +77,14 @@ To make sure the firmware is updated, open the onboard menu on the DeepDeck. To 
   <img src="https://github.com/DeepSea-Developments/DeepDeck.Ahuyama.fw/assets/5274871/2be958e3-d27d-44b8-a864-ff7a46ee1447?raw=true" alt="DeepDeck version check" width="60%"/>
 </p>
 
-### Troubleshooting and additional information  
+### Troubleshooting and additional information
 
-For more information, go to the [complete guide of the DeepDeck installer](https://deepdeck.co/installer/).
+???+ bug "The DeepDeck connects and disconnects continuously from the PCs bluetooth"
+
+    A known issue is that **after flashing the deepdeck** the bluetooth connection goes crazy and it connects and disconnects. This just happens on this situation, and to solve this you should unpair the deepdeck from the device, reboot the deepdeck, and boot again.
+    We will see how to solve this bug, but as the workaround is easy and **only happens after flashing** it has low priority on the development.
+
+For more information, go to the [complete guide of the DeepDeck installer](../Docs/installer.md).
 
 
   

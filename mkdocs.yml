@@ -3,8 +3,8 @@ site_name: DeepDeck
 site_url: https://deepdeck.co
 site_author: DeepSea Developments
 site_description: >-
-  OpenSoruce macropad with Wifi and Bluetooth connection. Your regular 
-  macropad but with steroids.
+  DeepDeck is an OpenSource, MacroPad (mini mechanical keyboard) that enables 
+  you to get more productive by using it with your work/hobby/leisure programs.
 
 # Copyright
 copyright: Copyright &copy; 2022 - 2023 DeepDeck by DeepSea Developments
@@ -17,6 +17,8 @@ theme:
     repo: material/github
   # Default values, taken from mkdocs_theme.yml
   language: en
+  favicon: assets/favicon.ico
+  logo: assets/logo.png
   features:
     # - navigation.instant #Without this, the jump from home page to other subpages fails.
     # - navigation.instant.prefetch
@@ -168,9 +170,9 @@ plugins:
   - social
   - search
   - blog:
-      archive: true
+      archive: false
       archive_toc: false
-      categories: true
+      categories: false
       categories_toc: false
   - tags
   # - git-committers:
@@ -189,17 +191,20 @@ nav:
   - Quick Start Guide: 
     - First steps: en/QuickStartGuide/qsg.md
     - Firmware update: en/QuickStartGuide/qsg-firmware-update.md
-    - WebServer: en/QuickStartGuide/qsg-webserver.md
+    - Wifi Setup: en/QuickStartGuide/wifi-setup.md
+    - Layer creation: en/QuickStartGuide/layer-setup.md
+    - Add a battery: en/QuickStartGuide/battery.md
     - Thank you!: en/QuickStartGuide/thankyou.md
   - Setup:
     - Installation: en/Setup/vscode-setup.md
-    - DeepDeck installer: en/Setup/installer.md
     - Configuration: 
       - en/Setup/deepdeck-configuration.md
       - Layer: en/Setup/layer-configuration.md
       - Macro: en/Setup/macro-configuration.md
       - Knob: en/Setup/knob-configuration.md
-  - Resources: 
+  - Documentation:
+    - DeepDeck installer: en/Docs/installer.md
+  - Download: 
     - Source Code: en/Resources/source_code.md
     - 3d print accesories: en/Resources/3dprint.md
     - Other accesories: en/Resources/accessories.md
